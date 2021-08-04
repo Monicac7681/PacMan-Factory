@@ -7,7 +7,7 @@ Pac-Man moves from one left edge of the browswer to the right edge and change di
 This program uses a few JavaScript commands to imitate Pac-Man moving across a browser window while opening and closing its mouth. 
 
 <h3>List of JavaScript used:</h3>
-JS array to contain four Pac-Man images: two facing left and two facing right. 
+JS array contains four Pac-Man images: two facing left and two facing right. 
 Function Run to update the Pac-Man image. position and direction on the screen.
 Function CheckPageBounds to detect the edge of browser window and change the direction of Pac-Man.
 SetInterval to call Function Run every 200 ms.
