@@ -1,4 +1,4 @@
-# PacMan-theBeginning
+# PacMan Factory Exercise
 
 Pac-Man moves from one left edge of the browswer to the right edge and change direction. 
 
