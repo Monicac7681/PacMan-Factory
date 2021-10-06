@@ -27,10 +27,11 @@ function makePac() {
   newimg.src = './images/PacMan1.png';
   newimg.width = 100;
 
+  // TODO: set position here
   newimg.style.left = position.x;
   newimg.style.top = position.y;
-
-  game.appendChild(newimg);   // add new Child image to game
+  // TODO add new Child image to game
+  game.appendChild(newimg);
 
   // return details in an object
   return {
@@ -40,9 +41,9 @@ function makePac() {
   };
 }
 
- // loop over pacmen array and move each one and move image in DOM
 function update() {
- pacMen.forEach((item) => {
+  // loop over pacmen array and move each one and move image in DOM
+  pacMen.forEach((item) => {
     checkCollisions(item);
     item.position.x += item.velocity.x;
     item.position.y += item.velocity.y;
@@ -53,8 +54,8 @@ function update() {
   setTimeout(update, 20);
 }
 
-  // TODO: detect collision with all walls and make pacman bounce
 function checkCollisions(item) {
+  // TODO: detect collision with all walls and make pacman bounce
   if (item.position.x + item.velocity.x + item.newimg.width >   window.innerWidth || item.position.x + item.velocity.x < 0)
     item.velocity.x = -item.velocity.x;
   if (item.position.y + item.velocity.y + item.newimg.height >
